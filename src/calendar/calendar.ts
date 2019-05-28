@@ -11,7 +11,7 @@ import * as _ from "lodash";
                 <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
             </ion-col>
             <ion-col col-auto>
-                <div>{{displayYear}} - {{displayMonth + 1 | monthName:lang}}</div>
+                <div>{{displayMonth + 1 | monthName:lang}} - {{displayYear}}</div>
             </ion-col>
             <ion-col col-auto (click)="forward()">
                 <ion-icon ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
@@ -19,7 +19,7 @@ import * as _ from "lodash";
         </ion-row>
 
         <ion-row>
-            <ion-col class="center calendar-header-col" *ngFor="let head of weekHead">{{head | weekdayName:lang}}</ion-col>
+            <ion-col class="center calendar-header-col" *ngFor="let head of weekHead">{{head}}</ion-col>
         </ion-row>
 
         <ion-row class="calendar-row" *ngFor="let week of weekArray;let i = index">
