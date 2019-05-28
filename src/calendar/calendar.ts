@@ -64,9 +64,9 @@ export class Calendar {
       this.createMonth(this.displayYear, this.displayMonth);
     }
 
-    ngDoCheck() {
-      this.createMonth(this.displayYear, this.displayMonth);
-    }
+//     ngDoCheck() {
+//       this.createMonth(this.displayYear, this.displayMonth);
+//     }
 
 
     // Jump to today
