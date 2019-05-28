@@ -30,9 +30,9 @@ var Calendar = /** @class */ (function () {
     Calendar.prototype.ngOnChanges = function () {
         this.createMonth(this.displayYear, this.displayMonth);
     };
-    Calendar.prototype.ngDoCheck = function () {
-        this.createMonth(this.displayYear, this.displayMonth);
-    };
+//     Calendar.prototype.ngDoCheck = function () {
+//         this.createMonth(this.displayYear, this.displayMonth);
+//     };
     // Jump to today
     Calendar.prototype.today = function () {
         this.displayYear = this.currentYear;
