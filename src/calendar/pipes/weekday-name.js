@@ -12,8 +12,8 @@ var weekdayName = /** @class */ (function () {
     function weekdayName() {
     }
     weekdayName.prototype.transform = function (value, args) {
-        var lang = moment().locale(args);
-        return lang.localeData().weekdaysShort()[value];
+        moment().locale(args);
+        return moment().localeData().weekdaysShort()[value];
     };
     weekdayName = __decorate([
         core_1.Pipe({
