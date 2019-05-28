@@ -6,7 +6,7 @@ import * as moment from 'moment';
 })
 export class weekdayName {
   transform(value, args) {
-    var lang = moment().locale(args);
-    return lang.localeData().weekdaysShort()[value];
+    moment().locale(args);
+    return moment().localeData().weekdaysShort()[value];
   }
 }
