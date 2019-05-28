@@ -12,8 +12,8 @@ var monthName = /** @class */ (function () {
     function monthName() {
     }
     monthName.prototype.transform = function (value, args) {
-        var lang = moment().locale(args);
-        return lang.localeData().months(moment([2012, value - 1]));
+        moment().locale(args);
+        return moment().localeData().months(moment([2012, value - 1]));
     };
     monthName = __decorate([
         core_1.Pipe({
